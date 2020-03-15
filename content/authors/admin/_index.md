@@ -1,8 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: Data science for omics.
 education:
   courses:
   - course: PhD in Artificial Intelligence

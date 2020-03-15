@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nelson Bighetti">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="使用基于Rmarkd">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/blogdown/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/blogdown/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Data science and omics">
+  <meta property="og:url" content="/post/blogdown/">
+  <meta property="og:title" content="Blogdown | Data science and omics">
+  <meta property="og:description" content="使用基于Rmarkd"><meta property="og:image" content="/post/blogdown/featured,jpg.png">
+  <meta property="twitter:image" content="/post/blogdown/featured,jpg.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-03-15T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-03-15T16:07:13-07:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/blogdown/"
+  },
+  "headline": "Blogdown",
+  
+  "image": [
+    "/post/blogdown/featured,jpg.png"
+  ],
+  
+  "datePublished": "2020-03-15T00:00:00Z",
+  "dateModified": "2020-03-15T16:07:13-07:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Nelson Bighetti"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data science and omics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "使用基于Rmarkd"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Blogdown | Data science and omics</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Data science and omics</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Data science and omics</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#hero"><span>Demo</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Blogdown</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Mar 15, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/r/">R</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 200px; max-height: 231px;">
+  <div style="position: relative">
+    <img src="/post/blogdown/featured,jpg.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>使用基于Rmarkdown的包<code>blogdown</code>可以很方便的创建网站.比如一个个人网站.关于详细的blogdown,可以参考下面的网址:</p>
+<p><a href="https://bookdown.org/yihui/blogdown/">https://bookdown.org/yihui/blogdown/</a></p>
+<h3 id="需要准备的东西">需要准备的东西</h3>
+<ul>
+<li>
+<p>Rstudio和R</p>
+</li>
+<li>
+<p>一个github账户</p>
+</li>
+</ul>
+<h3 id="安装">安装</h3>
+<p>安装<code>blogdown</code>包.在R中.</p>
+<pre><code class="language-markdown">## Install from CRAN
+install.packages('blogdown')
+</code></pre>
+<p><code>blogdown</code>是基于<code>Hugo</code>的,所以需要安装Hugo.</p>
+<pre><code class="language-markdown">blogdown::install_hugo()
+</code></pre>
+<h3 id="创建项目">创建项目</h3>
+<p>![](./Screen Shot 2020-03-15 at 11.08.43 AM.png)</p>
+<p>推荐使用这个主题:gcushen/hugo-academic</p>
+<p>也可以使用下面的代码:</p>
+<pre><code class="language-markdown">blogdown::new_site(theme = 'gcushen/hugo-academic')
+</code></pre>
+<h3 id="预览">预览</h3>
+<p>项目建好之后,就会有一个demo的网站在.输入代码预览网站:</p>
+<pre><code class="language-{r,">blogdown:::serve_site()
+</code></pre>
+<p>![](./Screen Shot 2020-03-15 at 1.19.51 PM.png)</p>
+<h3 id="使用rstudio-ide来管理网站">使用Rstudio IDE来管理网站</h3>
+<p>![](./Screen Shot 2020-03-15 at 12.08.21 PM.png)</p>
+<p>Rstudio的<code>Addins</code>中有很多的功能可以方便的用来管理网站.当然他们也都有对应的命令行工具.</p>
+<ul>
+<li>
+<p><code>Serve Site</code>:对应着<code>blogdown::serve_site()</code>.用来对网站进行build,并进行预览.</p>
+</li>
+<li>
+<p><code>New Post</code>:对应着<code>blogdown::new_post()</code>,用来添加新的post.</p>
+</li>
+</ul>
+<p>其他的功能直接可以打开看看,</p>
+<h3 id="更改为其他的主题">更改为其他的主题</h3>
+<p>Hugo有很多主题,都是别人已经做好的,可以直接使用.</p>
+<p>官网如下:</p>
+<p><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+<p>找到自己喜欢以及合适的主题之后,找到该主题所在的github用户名和repo名字,然后使用下面的代码进行安装:</p>
+<pre><code class="language-markdown">blogdown::install_theme('user.name/repo.name')
+</code></pre>
+<p>比如我们使用下面的主题:</p>
+<p><a href="https://github.com/kakawait/hugo-tranquilpeak-theme">https://github.com/kakawait/hugo-tranquilpeak-theme</a></p>
+<p>最好的办法其实是直接新建一个网站,然后使用那个主题,因为不同的主题的配置等等都是非常不同的.</p>
+<h3 id="发布自己的网站">发布自己的网站</h3>
+<p>在本地创建好自己的网站之后,下面需要做的就是将自己的网站发布在网上,使别人可以通过url看到自己的网站.</p>
+<p>推荐将网站所有内容托管在github上,然后发布在netlify上.</p>
+<p>打开netlify网站(<a href="https://www.netlify.com/),">https://www.netlify.com/),</a>可以直接使用github账号登陆.</p>
+<ol>
+<li>生成发布文件</li>
+</ol>
+<p>输入下列代码:</p>
+<pre><code class="language-{r,">blogdown::hugo_build()
+</code></pre>
+<p>得到下面结果:</p>
+<p>![](./Screen Shot 2020-03-15 at 1.22.59 PM.png)</p>
+<p>然后在目录下有<code>public</code>文件夹,说明已经准备好.</p>
+<ol start="2">
+<li>登陆netlify网站</li>
+</ol>
+<p>登陆netlify网站,可以使用github账号登陆.</p>
+<p>然后将<code>public</code>文件夹直接拖动到提示区域即可.</p>
+<p>![](./Screen Shot 2020-03-15 at 1.27.38 PM.png)</p>
+<p>然后就会自动发布(deployment).</p>
+<p>这时候他会自动给一个网址(url),比如https://quirky-austin-f482bf.netlify.com/.</p>
+<ol start="3">
+<li>绑定github自动发布</li>
+</ol>
+<p>每次更新之后,我们都需要将<code>public</code>文件夹手动拖动到netlify中,有些麻烦.可以将我们的网站托管在github上,然后将github repo和netlify绑定,从而在每次更新并同步到github之后,让netlify自动更新发布.</p>
+<p>首先在github上创建和本地仓库同名的远程仓库.</p>
+<p>然后参考git部分的内容,先创建远程仓库并提交,在terminal中:</p>
+<pre><code class="language-markdown">git config user.name
+git config user.email
+git init
+git add .
+git commit -m 'new website'
+</code></pre>
+<p>然后推送到远程仓库:</p>
+<pre><code class="language-markdown">remote add origin git@github_shenxt:shenxt/ds4omics
+git remote -v
+git push -u origin master#第一次推送
+</code></pre>
+<p>这时候可以看到,本地仓库内容已经被推送到远程仓库了.</p>
+<p>设置netlify:</p>
+<p>在netlify,点击<code>Site Setting</code> -&gt; <code>Build&amp;deploy</code> -&gt; <code>Link site to git</code></p>
+<p>然后按照提示一步步进行即可.</p>
+<p>另外,需要设置下面内容:</p>
+<p>![](./Screen Shot 2020-03-15 at 2.00.24 PM.png)</p>
+<p>hugo版本可以在R中观察.</p>
+<pre><code class="language-{r,">blogdown::hugo_version()
+</code></pre>
+<p>这样,以后再进行改动,然后使用git将其推送到github,netlify就会自动同步并发布.</p>
+<ol start="4">
+<li>设置自定义域名</li>
+</ol>
+<p>我们可能需要设置自己的域名.</p>
+<p>如果没有买域名,那就只能使用netlify而二级域名,二级域名可以进行设置.</p>
+<p>在<code>site sitting</code>-&gt;<code>site information</code>中,点击<code>change site name</code>,就可以设置自己的二级域名.比如我们这里改成<code>ds4omics.netlify.com</code>.</p>
+<p>如果我们购买了自己的域名,可以在
+<a href="https://www.godaddy.com/offers/domains/noprice?isc=goodbr01&amp;gclid=Cj0KCQjwpLfzBRCRARIsAHuj6qXFolBcCQVKrRZVwzZkywSjzrq1XCq1UoWMls8jdYX-gnfVSNyhiVgaAuKCEALw_wcB&amp;gclsrc=aw.ds" target="_blank" rel="noopener">goDaddy</a>购买.</p>
+<p>然后也可以设置为自己的域名.</p>
+<p>在netlify主页上,点击<code>Set up a custom domain</code>.然后填入自己购买的域名,比如<code>shenxt.me</code>,然后按照提示一步步进行即可.</p>
+<h3 id="发布到github上">发布到github上</h3>
+<p>也可以将网站发布到github pages上.</p>
+<p>具体可以参考https://bookdown.org/yihui/blogdown/github-pages.html.</p>
+<p>下图是我自己的个人博客,也是使用blogdown建立的.</p>
+<p>![](./Screen Shot 2020-03-14 at 10.52.48 PM.png)</p>
+<h2 id="bookdown">Bookdown</h2>
+<p>![](./Screen Shot 2020-03-14 at 10.54.49 PM.png)</p>
+<h2 id="presentation">Presentation</h2>
+<p>![](./Screen Shot 2020-03-14 at 11.00.46 PM.png)</p>
+<p>![](./Screen Shot 2020-03-14 at 11.01.20 PM.png)</p>
+<h2 id="pagedown">Pagedown</h2>
+<p>![](./Screen Shot 2020-03-14 at 11.03.05 PM.png)</p>
+<h2 id="pkgdown">Pkgdown</h2>
+<p>![](./Screen Shot 2020-03-14 at 11.03.59 PM.png)</p>
+<p>![](/2020-03-15-blogdown/index_files/Annotation 2020-03-04 101100.png)</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/blogdown/&amp;text=Blogdown" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/blogdown/&amp;t=Blogdown" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Blogdown&amp;body=/post/blogdown/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/blogdown/&amp;title=Blogdown" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Blogdown%20/post/blogdown/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/blogdown/&amp;title=Blogdown" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg" alt="Nelson Bighetti">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Nelson Bighetti</a></h5>
+      <h6 class="card-subtitle">Professor of Artificial Intelligence</h6>
+      <p class="card-text">Data science for omics.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/gcushen" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    ©Data science and omics2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
