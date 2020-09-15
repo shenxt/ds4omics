@@ -1,0 +1,69 @@
+Package: metPath
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.0.9
+Author: Who wrote it
+Maintainer: The package maintainer <shenxt@stanford.edu>
+Description: This package is used to do statistical data analysis for and pathway enrichment analysi for metabolomics data.
+LazyData: true
+Depends: R (>= 3.5)
+Imports:
+    BiocParallel,
+    cli,
+    crayon,
+    clisymbols,
+    dplyr,
+    faahKO,
+    ggplot2,
+    ggsci,
+    ggfortify,
+    graphics,
+    grDevices,
+    pcaMethods,
+    httr,
+    impute,
+    missForest,
+    magrittr,
+    scatterplot3d,
+    pbapply,
+    pheatmap,
+    plyr,
+    purrr,
+    beeswarm,
+    ellipse,
+    patchwork,
+    pls,
+    plsdepot,
+    pROC,
+    e1071,
+    snow,
+    methods,
+    MSnbase,
+    mzR,
+    pander,
+    utils,
+    rvest,
+    stats,
+    readr,
+    readxl,
+    RColorBrewer,
+    plotly,
+    stringr,
+    tibble,
+    tidyr,
+    tidyverse,
+    xml2,
+    webchem
+License: GPL-2 | file LICENSE
+URL: https://github.com/jaspershen/metPath
+RoxygenNote: 7.1.0
+Suggests: knitr,
+    rmarkdown,
+    BiocStyle,
+    RUnit,
+    BiocGenerics
+VignetteBuilder: knitr
+Note:
+biocViews: Metabolomics, MassSpectrometry, Data processing, Data analysis.
+Encoding: UTF-8
+

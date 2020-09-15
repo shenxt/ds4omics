@@ -1,0 +1,11 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+NEWS.md
+LICENSE.md
+example
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+demo_data
+summary
+summary
