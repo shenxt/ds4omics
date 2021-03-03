@@ -8,4 +8,8 @@ example
 ^pkgdown$
 demo_data
 summary
-summary
+
+vignettes/*.html
+vignettes/*.pdf
+vignettes/*.cache
+
